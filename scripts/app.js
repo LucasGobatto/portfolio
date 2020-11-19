@@ -1,12 +1,58 @@
-const changeTitle = () => {
-  const buttons = document.querySelectorAll('.button');
-  const title = document.querySelector('.title');
+
+const enText = {
+  title: "My Portfolio",
+  buttonTitle: {
+    home: 'Home',
+    work: 'Work',
+    projects: 'Projects',
+    about: 'About',
+    contact: 'Contact'
+  },
+};
+
+const ptText = {
+  title: "Meu Portifolio",
+  buttonTitle: {
+    home: 'Início',
+    work: 'Trabalho',
+    projects: 'Projetos',
+    about: 'Sobre Mim',
+    contact: 'Contato'
+  },
+};
+
+function setTexts(language='EN') {
+  const title = document.querySelector('#page-name.title');
+  const homeButton = document.querySelector('.button[name=home]');
+  const aboutButton = document.querySelector('.button[name=about]');
+  const projectsButton = document.querySelector('.button[name=projects]');
+  const contactButton = document.querySelector('.button[name=contact]');
+  const workButton = document.querySelector('.button[name=work]');
+
+  if (language.toUpperCase() === 'EN') {
+    title.innerHTML = enText.title;
+    homeButton.innerHTML = enText.buttonTitle.home;
+    aboutButton.innerHTML = enText.buttonTitle.about;
+    projectsButton.innerHTML = enText.buttonTitle.projects;
+    contactButton.innerHTML = enText.buttonTitle.contact;
+    workButton.innerHTML = enText.buttonTitle.work;
+  } else {
+    title.innerHTML = ptText.title;
+    homeButton.innerHTML = ptText.buttonTitle.home;
+    aboutButton.innerHTML = ptText.buttonTitle.about;
+    projectsButton.innerHTML = ptText.buttonTitle.projects;
+    contactButton.innerHTML = ptText.buttonTitle.contact;
+    workButton.innerHTML = ptText.buttonTitle.work;
+  }
+}
+
+const changeLanguage = () => {
+  const buttons = document.querySelectorAll('.option-button');
+  const title = document.querySelector('.current-language');
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
       const buttonTitle = button.innerHTML;
-      const currentTitle = title.innerHTML
-      button.innerHTML = currentTitle;
       title.innerHTML = buttonTitle;
     })
   });
@@ -39,15 +85,30 @@ const showButtons = () => {
   });
 };
 
+const toggleLanguage = () => {
+  const selectButton = document.querySelector('.select-button');
+  const languageOptions = document.querySelector('.option-container');
+  const languages = document.querySelectorAll('.option-button');
+
+  selectButton.addEventListener('click', () => {
+    selectButton.classList.toggle('toggle');
+    languageOptions.classList.toggle('show-language-options');
+  });
+
+  languages.forEach((button) => {
+    button.addEventListener('click', () => {
+      setTexts(button.innerHTML)
+    })
+  })
+}
+
+
 const App = () => {
-  changeTitle();
+  setTexts();
   openSidebar();
   showButtons();
-
-  console.log(document.querySelector('#page-name').innerHTML)
-  if (document.querySelector('#page-name').innerHTML !== 'Home') {
-    document.querySelector('.welcome-container').style.display = 'none';
-  }
+  toggleLanguage();
+  changeLanguage();
 };
 
 App();

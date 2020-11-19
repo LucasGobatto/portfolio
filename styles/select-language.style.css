@@ -1,0 +1,92 @@
+.select-language-container {
+  display: flex;
+  width: 10%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.select-button {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #0f0f0f;
+  color: #c6c6c6;
+  border: none;
+}
+
+.left-bar {
+  background-color: #c6c6c6;
+  border-radius: 1px;
+  width: 11px;
+  height: 3px;
+  transform: rotate(45deg) translate(2.5px, -0.5px);
+  transition: transform 500ms ease;
+}
+.right-bar {
+  background-color: #c6c6c6;
+  border-radius: 1px;
+  width: 11px;
+  height: 3px;
+  transform: rotate(-45deg) translate(-3px, -1px);
+  transition: transform 500ms ease;
+}
+
+.toggle .left-bar {
+  transform: rotate(-45deg) translate(2.5px, 0px);
+  transition: transform 500ms ease;
+}
+.toggle .right-bar {
+  transform: rotate(45deg) translate(-3.5px, 1px);
+  transition: transform 500ms ease;
+}
+
+.select-language-container p {
+  text-align: center;
+  color: #c6c6c6;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: #0f0f0f;
+  left: 20%;
+  width: 10%;
+  transform: translateY(0);
+  transition: transform 500ms ease-in;
+}
+
+.option-button {
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #c6c6c6;
+  background-color: #0f0f0f;
+  color: #c6c6c6;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  width: 90%;
+}
+
+.show-language-options {
+  transform: translateY(10vh);
+}
+
+.hide-language-options {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 800px) {
+  .option-container {
+    left: 47.5%;
+    width: 20%;
+  }
+  .select-language-container {
+    width: 20%;
+  }
+}
