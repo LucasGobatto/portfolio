@@ -1,0 +1,48 @@
+.image-container img {
+  margin: 1rem;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  background-color: #c6c6c6;
+  min-width: 600px;
+  height: 30vh;
+  border-radius: 5px;
+  margin: 4rem;
+}
+
+.about .paragraph {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+}
+
+.subtitle-about {
+  color: #0f0f0f;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-text {
+  color: #0f0f0f;
+}
+
+@media only screen and (max-width: 630px) {
+  .about {
+    flex-direction: column;
+    min-width: 400px;
+    height: 73vh;
+    margin: 0;
+  }
+
+  .image-container img {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+  }
+}

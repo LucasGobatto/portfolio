@@ -1,17 +1,20 @@
 const enText = {
-  title: "My Portfolio",
+  title: 'My Portfolio',
   buttonTitle: {
     home: 'Home',
     work: 'Work',
     projects: 'Projects',
-    about: 'About',
+    about: 'About Me',
     contact: 'Contact'
   },
-  about: "Here will be put things about me"
+  about: {
+    title: 'About Me', 
+    text: 'Hello! Welcome to my portfolio. My name is Lucas and I hope you enjoy my work.',
+  },
 };
 
 const ptText = {
-  title: "Meu Portifolio",
+  title: 'Meu Portifolio',
   buttonTitle: {
     home: 'Início',
     work: 'Trabalho',
@@ -19,31 +22,50 @@ const ptText = {
     about: 'Sobre Mim',
     contact: 'Contato'
   },
-  about: "Aqui será colocado coisas sobre mim"
+  about: {
+    title: 'Sobre mim',
+    text: `Olá! Bem vindo(a) ao meu portifólio. Me chamo Lucas, sou estudante de Engenharia Química e sou facinado por tecnologia. Gosto muito de programar, tocar meu violão e de experimentar coisas novas.
+    Sou focado e gosto muito de ajudar os outros no que eu posso, pois sei que a melhor forma de aprender é ensinando. Costumo ter ótimas relacões interpessoais e trabalhar e conjunto, sempre tentando aprender
+    e analisar novos pontos de vista.`,
+  },
 };
 
 function setTexts(language='PT-BR') {
   const title = document.querySelector('#page-name.title');
+  const subtitleAbout = document.querySelector('.subtitle-about');
+
   const homeButton = document.querySelector('.button[name=home]');
   const aboutButton = document.querySelector('.button[name=about]');
   const projectsButton = document.querySelector('.button[name=projects]');
   const contactButton = document.querySelector('.button[name=contact]');
   const workButton = document.querySelector('.button[name=work]');
 
+  const aboutText = document.querySelector('.about-text');
+
+
   if (language.toUpperCase() === 'EN') {
     title.innerHTML = enText.title;
+    subtitleAbout.innerHTML = enText.about.title;
+    console.log(subtitleAbout.innerHTML)
+
     homeButton.innerHTML = enText.buttonTitle.home;
     aboutButton.innerHTML = enText.buttonTitle.about;
     projectsButton.innerHTML = enText.buttonTitle.projects;
     contactButton.innerHTML = enText.buttonTitle.contact;
     workButton.innerHTML = enText.buttonTitle.work;
+
+    aboutText.innerHTML = enText.about.text
   } else {
     title.innerHTML = ptText.title;
+    subtitleAbout.innerHTML = ptText.about.title;
+
     homeButton.innerHTML = ptText.buttonTitle.home;
     aboutButton.innerHTML = ptText.buttonTitle.about;
     projectsButton.innerHTML = ptText.buttonTitle.projects;
     contactButton.innerHTML = ptText.buttonTitle.contact;
     workButton.innerHTML = ptText.buttonTitle.work;
+
+    aboutText.innerHTML = ptText.about.text
   }
 }
 
