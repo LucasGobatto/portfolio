@@ -1,4 +1,3 @@
-
 const enText = {
   title: "My Portfolio",
   buttonTitle: {
@@ -8,6 +7,7 @@ const enText = {
     about: 'About',
     contact: 'Contact'
   },
+  about: "Here will be put things about me"
 };
 
 const ptText = {
@@ -19,9 +19,10 @@ const ptText = {
     about: 'Sobre Mim',
     contact: 'Contato'
   },
+  about: "Aqui será colocado coisas sobre mim"
 };
 
-function setTexts(language='EN') {
+function setTexts(language='PT-BR') {
   const title = document.querySelector('#page-name.title');
   const homeButton = document.querySelector('.button[name=home]');
   const aboutButton = document.querySelector('.button[name=about]');
