@@ -38,16 +38,23 @@ const showButtons = () => {
     sidebarButton.classList.toggle('toggle');
   });
 };
+// 12
+
+const toggleSelectLanguage = () => {
+  const selectButton = document.querySelector('.select-button');
+  const languageOptions = document.querySelector('.option-container');
+
+  selectButton.addEventListener('click', () => {
+    selectButton.classList.toggle('toggle');
+    languageOptions.classList.toggle('show-language-options');
+
+  });
+}
 
 const App = () => {
-  changeTitle();
   openSidebar();
   showButtons();
-
-  console.log(document.querySelector('#page-name').innerHTML)
-  if (document.querySelector('#page-name').innerHTML !== 'Home') {
-    document.querySelector('.welcome-container').style.display = 'none';
-  }
+  toggleSelectLanguage();
 };
 
 App();
