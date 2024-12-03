@@ -1,44 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="./styles/global.style.css" />
-    <link rel="stylesheet" href="./styles/nav-bar.style.css" />
-    <link rel="stylesheet" href="./styles/select-language.style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
   </head>
   <body>
-    <nav class="container">
-      <h1 class="title" id="page-name"></h1>
-      <div class="select-language-container">
-        <p class="current-language" name="current-language-name">PT-BR</p>
-        <div class="select-button">
-          <div class="left-bar"></div>
-          <div class="right-bar"></div>
-        </div>
-      </div>
-      <div class="button-container">
-        <button class="button" name="home"></button>
-        <button class="button" name="about"></button>
-        <button class="button" name="projects"></button>
-        <button class="button" name="work"></button>
-        <button class="button" name="contact"></button>
-      </div>
-      <div class="tab-button-container">
-        <div class="top-bar"></div>
-        <div class="middle-bar"></div>
-        <div class="bottom-bar"></div>
-      </div>
-    </nav>
-    <div class="option-container">
-      <button class="option-button" name="pt-br">PT-BR</button>
-      <button class="option-button" name="en">EN</button>
-    </div>
-    <div class="image-container">
-      <!-- <img src="./assets/image/profile-photo.jfif" alt="img"/> -->
-    </div>
-    <script src="./scripts/app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
