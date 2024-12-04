@@ -51,5 +51,7 @@ export const typography: (palette: Palette) => TypographyOptions = () => ({
     lineHeight: '16px',
     textTransform: 'uppercase',
     letterSpacing: 'unset',
+    color: 'unset',
+    textDecoration: 'none',
   },
 });

@@ -42,6 +42,7 @@ const Milestone = ({ year, institution, degree }: MilestoneProps) => {
 export const AcademicSection = () => {
   return (
     <Box
+      id='academic'
       padding='32px'
       display='flex'
       flexDirection='column'

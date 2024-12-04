@@ -11,6 +11,7 @@ const ProfileImage = styled('img')(({ theme }) => ({
 export const ResumeSection = () => {
   return (
     <Box
+      id='resume'
       display='flex'
       padding='56px 32px'
       bgcolor={({ palette }) => palette.primary[300]}

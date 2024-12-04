@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { ResumeSection } from './sections/resume';
 import { AboutMeSection } from './sections/about-me';
 import { AcademicSection } from './sections/academic';
-import { ProfessionalSection } from './sections/profissional';
+import { ExperienceSection } from './sections/experience';
 
 export const HomePage = () => {
   return (
@@ -12,7 +12,7 @@ export const HomePage = () => {
       <ResumeSection />
       <AboutMeSection />
       <AcademicSection />
-      <ProfessionalSection />
+      <ExperienceSection />
     </Box>
   );
 };

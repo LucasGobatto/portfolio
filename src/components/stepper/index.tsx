@@ -2,7 +2,7 @@ import { Box, styled, Typography } from '@mui/material';
 import React from 'react';
 
 const HorizontalLine = styled(Box)(({ theme }) => ({
-  flex: 0.2,
+  flex: 0.1,
   height: '2px',
   borderRadius: '1px',
   backgroundColor: theme.palette.primary[500],

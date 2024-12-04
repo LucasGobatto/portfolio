@@ -35,11 +35,11 @@ const Milestone = ({ period, company, role, description, location }: MilestonePr
   );
 };
 
-export const ProfessionalSection = () => {
+export const ExperienceSection = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <Box padding='32px' bgcolor='white'>
+    <Box id='experience' padding='32px' bgcolor='white'>
       <Typography variant='h2' textTransform='uppercase' textAlign='center'>
         Experiências
       </Typography>
