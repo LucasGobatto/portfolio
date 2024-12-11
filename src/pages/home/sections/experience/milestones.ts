@@ -55,7 +55,7 @@ export const milestones = [
   },
 
   {
-    company: 'Associaçao de Engenharia Química',
+    company: 'Associação de Engenharia Química',
     role: 'Diretor de Patrimônio',
     period: 'Jan de 2019 - Ago de 2019 · 8 meses',
     location: 'Brasil',

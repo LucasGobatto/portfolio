@@ -19,10 +19,10 @@ export const AboutMeSection = () => {
         </Typography>
       </Box>
       <Typography variant='body1' sx={{ textWrap: 'balance' }} textAlign='center'>
-        Sou um profissional determinado a cumprir as tarefas, animado e adoro para trabalhar em equipe. Minha
-        experiencia profissional é pautada em sempre aprender com pessoas mais experientes e enfrentar os desafios com
-        paciência e perseverança. Minha meta é me tornar um profissional de referencia, tanto no âmbito técnico, quanto
-        na liderança.
+        Sou um profissional determinado a cumprir as tarefas, animado e adoro trabalhar em equipe. Minha experiencia
+        profissional é pautada em sempre aprender com pessoas mais experientes e enfrentar os desafios com paciência e
+        perseverança. Minha meta é me tornar um profissional de referencia, tanto no âmbito técnico, quanto na
+        liderança.
       </Typography>
       <Typography variant='body1' sx={{ textWrap: 'balance' }} textAlign='center'>
         Tenho aprendido com ótimos exemplos ao longo da minha vida profissional a me tornar uma pessoa mais forte e
@@ -31,7 +31,7 @@ export const AboutMeSection = () => {
       </Typography>
       <Typography variant='body1' sx={{ textWrap: 'balance' }} textAlign='center'>
         Meu estilo de trabalho é levar os desafios com leveza e seriedade, a fim de tornar as tarefas mais prazerosas e
-        trazer excelência nas entregas.
+        atingir excelência nas entregas.
       </Typography>
     </Box>
   );

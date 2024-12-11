@@ -4,6 +4,9 @@ import { ResumeSection } from './sections/resume';
 import { AboutMeSection } from './sections/about-me';
 import { AcademicSection } from './sections/academic';
 import { ExperienceSection } from './sections/experience';
+import { SkillsSection } from './sections/skills';
+import { ProjectsSection } from './sections/projects';
+import { ContactSection } from './sections/contact';
 
 export const HomePage = () => {
   return (
@@ -13,6 +16,9 @@ export const HomePage = () => {
       <AboutMeSection />
       <AcademicSection />
       <ExperienceSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
     </Box>
   );
 };

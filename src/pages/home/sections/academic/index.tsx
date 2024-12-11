@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { School } from '@mui/icons-material';
 import {
   Timeline,
   TimelineConnector,
@@ -8,7 +8,7 @@ import {
   TimelineOppositeContent,
   TimelineSeparator,
 } from '@mui/lab';
-import { School } from '@mui/icons-material';
+import { Box, Typography } from '@mui/material';
 
 interface MilestoneProps {
   year: string;
