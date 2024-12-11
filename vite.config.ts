@@ -5,6 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   build: {
+    outDir: 'docs',
     emptyOutDir: false,
     cssCodeSplit: false,
     commonjsOptions: { include: ['node_modules/**'] },
