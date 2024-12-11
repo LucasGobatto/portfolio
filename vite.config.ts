@@ -7,7 +7,6 @@ export default defineConfig({
   build: {
     outDir: 'docs',
     assetsDir: '',
-    cssMinify: true,
     emptyOutDir: false,
     cssCodeSplit: false,
     commonjsOptions: { include: ['node_modules/**'] },
