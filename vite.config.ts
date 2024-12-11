@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   build: {
     outDir: 'docs',
+    assetsDir: '',
     emptyOutDir: false,
     cssCodeSplit: false,
     commonjsOptions: { include: ['node_modules/**'] },
