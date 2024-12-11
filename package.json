@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite --host --port 4000"
+    "start": "vite --host --port 4000",
+    "build": "vite build"
   },
   "keywords": [],
   "dependencies": {
